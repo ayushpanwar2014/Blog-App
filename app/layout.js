@@ -1,5 +1,6 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import { ProgressProvider } from "./Context/ProgressProvider";
 
 const outfit = Outfit({
   weight: ['400', '500', '600', '700'],
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.className}`}
       >
-        {children}
+        <ProgressProvider>
+          {children}
+        </ProgressProvider>
       </body>
     </html>
   );

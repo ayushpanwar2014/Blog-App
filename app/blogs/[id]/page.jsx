@@ -1,5 +1,6 @@
 'use client'
 
+import { useProgress } from '@/app/Context/ProgressProvider';
 import Footer from '@/Components/Footer';
 import { assets } from '@/public/Assets/assets'
 import axios from 'axios';
@@ -11,8 +12,10 @@ const page = ({ params }) => {
 
     const { id } = use(params);
     const [data, setData] = useState(null);
+  const { startProgress, completeProgress } = useProgress();
 
     const fetchBlogData = async () => {
+        startProgress()
         const response = await axios.get('/api/blog', {
             params: {
                 id: id
@@ -20,6 +23,7 @@ const page = ({ params }) => {
         })
 
         setData(response.data.blog);
+        completeProgress();
     }
 
     useEffect(() => {

@@ -1,3 +1,4 @@
+import { useProgress } from '@/app/Context/ProgressProvider';
 import { assets } from '@/public/Assets/assets'
 import axios from 'axios';
 import Image from 'next/image'
@@ -7,20 +8,24 @@ import { toast } from 'react-toastify';
 const Header = () => {
 
   const [email, setEmail] = useState("");
+  const { startProgress, completeProgress } = useProgress();
+
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     const formData = new FormData();
 
     formData.append('email', email);
-
+    startProgress();
     const response = await axios.post('/api/email', formData);
 
     if (response.data.success) {
       toast.success(response.data.msg);
       setEmail("");
+      completeProgress()
     }
     else {
+      completeProgress()
       toast.error("error");
     }
   }

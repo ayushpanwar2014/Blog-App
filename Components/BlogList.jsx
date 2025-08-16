@@ -1,16 +1,20 @@
 import { useEffect, useState } from 'react'
 import BlogItem from './BlogItem'
 import axios from 'axios'
+import { useProgress } from '@/app/Context/ProgressProvider'
 
 const BlogList = () => {
 
   const [menu, setMenu] = useState("All")
   const [blogs, setBlogs] = useState([]);
+  const { startProgress, completeProgress } = useProgress();
+
 
   const fetchBlogs = async () => {
-
+    startProgress();
     const response = await axios.get('/api/blog');
     setBlogs(response.data.blogs);
+    completeProgress();
   }
 
   useEffect(() => {
