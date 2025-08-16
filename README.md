@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=30&pause=1000&color=007EFF&background=3159FF00&width=900&lines=%F0%9F%93%9D+Blog-App+%E2%80%93+Full-Stack+Blogging+Platform)](https://git.io/typing-svg)
 
-## Getting Started
+<img width="1356" height="947" alt="BlogAPP" src="https://github.com/user-attachments/assets/dbbdc7a9-ee3a-4ea6-8e72-b6bd8c7ee1fd" />
 
-First, run the development server:
+## Full-Stack Developer | Feb – Jun 2024
+````bash
+GitHub Repository: https://github.com/ayushpanwar2014/Blog-App | Remote
+````
 
+
+<article>
+  <h2>Tech Skills 🛠️</h2>
+
+  <!-- Skillicons for supported skills -->
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,mongodb,git,github&perline=5" alt="Tech Stack" />
+  
+![REST APIs](https://img.shields.io/badge/REST%20APIs-6C63FF?style=for-the-badge)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-E53E3E?style=for-the-badge)
+![Agile](https://img.shields.io/badge/Agile-F6AD55?style=for-the-badge)
+![Microservices](https://img.shields.io/badge/Microservices-805AD5?style=for-the-badge)
+![DBMS](https://img.shields.io/badge/DBMS-D69E2E?style=for-the-badge)
+![DSA](https://img.shields.io/badge/DataStructures--Algorithms-3182CE?style=for-the-badge)
+</article>
+
+
+
+
+## Overview
+
+Blog-App is a full-stack blogging platform built with Next.js and MongoDB, designed for SEO optimization and fast rendering. It features secure authentication using bcrypt and JWT, full CRUD operations, and role-based access for Admins and Users. The platform supports markdown editing, tag filtering, and dynamic blog routing, achieving a 25% performance boost through API and UI optimization.
+
+
+
+## Features
+````bash
+Role-based access control (Admin / User)
+
+Secure authentication with bcrypt and JWT
+
+Full CRUD operations for blog posts
+
+Markdown editing for content creation
+
+Tag-based filtering and dynamic blog routing
+
+SEO-optimized with Next.js server-side rendering (SSR)
+
+RESTful API endpoints for frontend consumption
+
+Optimized performance with Node Cache
+
+````
+
+Environment Variables
+
+The backend requires the following environment variables in a .env file:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+MONGO_DB_URL = 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Clone the repository:
+```bash
+git clone https://github.com/ayushpanwar2014/Blog-App.git
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Install  dependencies:
+```bash
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Run the backend server:
+```bash
 
-## Deploy on Vercel
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Set up frontend in /frontend folder (Next.js app) and run with:
+```bahs
+npm run dev
+
+```
+
+## Backend Dependencies
+
+
+
+```bash
+
+bcrypt
+
+body-parser
+
+cors
+
+dotenv
+
+express
+
+jsonwebtoken
+
+mongoose
+
+morgan
+
+multer
+
+node-cache
+
+validator
+
+```
+## License
+
+MIT License
