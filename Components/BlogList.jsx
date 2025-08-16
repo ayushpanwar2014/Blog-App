@@ -26,14 +26,23 @@ const BlogList = () => {
         <button onClick={() => setMenu('Startup')} className={menu === "Startup" ? 'bg-black text-white py-1 px-4 rounded-sm cursor-pointer' : "cursor-pointer"} >Startup</button>
         <button onClick={() => setMenu('Lifestyle')} className={menu === "Lifestyle" ? 'bg-black text-white py-1 px-4 rounded-sm cursor-pointer' : "cursor-pointer"} >Lifestyle</button>
       </div>
-      <div className="flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24">
+      {
+        !blogs || blogs.length === 0 ? (
 
-        {blogs.filter((item) => menu === "All" ? true : item.category === menu).map((item, index) => {
+          <div className="btn-spinner mb-10">
+            <div className="spinner"></div>
+          </div>
+        ) : (
+          <div className="flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24">
 
-          return <BlogItem key={index} id={item._id} image={item.image} title={item.title} category={item.category} description={item.category} />
+            {blogs.filter((item) => menu === "All" ? true : item.category === menu).map((item, index) => {
 
-        })}
-      </div>
+              return <BlogItem key={index} id={item._id} image={item.image} title={item.title} category={item.category} description={item.category} />
+
+            })}
+          </div>
+        )
+      }
     </div>
   )
 }

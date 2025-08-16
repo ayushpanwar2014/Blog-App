@@ -53,8 +53,6 @@ const page = () => {
     else {
       toast.error("Error");
     }
-
-
   }
 
   return (
