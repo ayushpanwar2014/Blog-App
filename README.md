@@ -1,10 +1,6 @@
-
-Screenshots
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=30&pause=1000&color=007EFF&background=3159FF00&width=900&lines=%F0%9F%93%9D+Blog-App+%E2%80%93+Full-Stack+Blogging+Platform)](https://git.io/typing-svg)
 
 <img width="1356" height="947" alt="BlogAPP" src="https://github.com/user-attachments/assets/dbbdc7a9-ee3a-4ea6-8e72-b6bd8c7ee1fd" />
-
-
-## Blog-App – Full-Stack Blogging Platform
 
 ## Full-Stack Developer | Feb – Jun 2024
 ````bash
