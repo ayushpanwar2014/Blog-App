@@ -3,9 +3,9 @@
 <img width="1356" height="947" alt="BlogAPP" src="https://github.com/user-attachments/assets/dbbdc7a9-ee3a-4ea6-8e72-b6bd8c7ee1fd" />
 
 ## Full-Stack Developer | Feb – Jun 2024
-````bash
-GitHub Repository: https://github.com/ayushpanwar2014/Blog-App | Remote
-````
+
+- GitHub Repository: [Repo](https://github.com/ayushpanwar2014/Blog-App) | Remote
+
 
 
 <article>
@@ -23,8 +23,6 @@ GitHub Repository: https://github.com/ayushpanwar2014/Blog-App | Remote
 </article>
 
 
-
-
 ## Overview
 
 Blog-App is a full-stack blogging platform built with Next.js and MongoDB, designed for SEO optimization and fast rendering. It features secure authentication using bcrypt and JWT, full CRUD operations, and role-based access for Admins and Users. The platform supports markdown editing, tag filtering, and dynamic blog routing, achieving a 25% performance boost through API and UI optimization.
@@ -32,64 +30,56 @@ Blog-App is a full-stack blogging platform built with Next.js and MongoDB, desig
 
 
 ## Features
-````bash
-Role-based access control (Admin / User)
 
-Secure authentication with bcrypt and JWT
+- Role-based access control (Admin / User)
 
-Full CRUD operations for blog posts
+- Secure authentication with bcrypt and JWT
 
-Markdown editing for content creation
+- Full CRUD operations for blog posts
 
-Tag-based filtering and dynamic blog routing
+- Markdown editing for content creation
 
-SEO-optimized with Next.js server-side rendering (SSR)
+- Tag-based filtering and dynamic blog routing
 
-RESTful API endpoints for frontend consumption
+- SEO-optimized with Next.js server-side rendering (SSR)
 
-Optimized performance with Node Cache
+- RESTful API endpoints for frontend consumption
 
-````
+-Optimized performance with Node Cache
 
-Environment Variables
 
-The backend requires the following environment variables in a .env file:
+## Environment Variables
+
+-The backend requires the following environment variables in a .env file:
+
 ```bash
 MONGO_DB_URL = 
 ```
 
 ## Clone the repository:
+
 ```bash
 git clone https://github.com/ayushpanwar2014/Blog-App.git
 ```
-
-
-
-
 ## Install  dependencies:
+
 ```bash
 npm install
-
 ```
 
 ## Run the backend server:
-```bash
 
+```bash
 npm start
 ```
 
-
-
-
 ## Set up frontend in /frontend folder (Next.js app) and run with:
+
 ```bahs
 npm run dev
 
 ```
-
 ## Backend Dependencies
-
-
 
 ```bash
 
