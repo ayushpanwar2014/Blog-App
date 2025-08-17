@@ -45,12 +45,12 @@ Blog-App is a full-stack blogging platform built with Next.js and MongoDB, desig
 
 - RESTful API endpoints for frontend consumption
 
--Optimized performance with Node Cache
+- Optimized performance with Node Cache
 
 
 ## Environment Variables
 
--The backend requires the following environment variables in a .env file:
+- The backend requires the following environment variables in a .env file:
 
 ```bash
 MONGO_DB_URL = 
