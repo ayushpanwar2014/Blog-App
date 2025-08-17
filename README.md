@@ -81,31 +81,28 @@ npm run dev
 ```
 ## Backend Dependencies
 
-```bash
+- bcrypt
 
-bcrypt
+- body-parser
 
-body-parser
+- cors
 
-cors
+- dotenv
 
-dotenv
+- express
 
-express
+- jsonwebtoken
 
-jsonwebtoken
+- mongoose
 
-mongoose
+- morgan
 
-morgan
+- multer
 
-multer
+- node-cache
 
-node-cache
+- validator
 
-validator
-
-```
 ## License
 
 MIT License
