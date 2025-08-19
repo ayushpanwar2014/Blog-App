@@ -34,6 +34,7 @@ const BlogList = () => {
         !blogs || blogs.length === 0 ? (
 
           <div className="btn-spinner mb-10">
+            <p style={{textAlign: 'center', marginBottom: '40px'}}>Please wait ! <br />While backend is Connecting from Render.</p>
             <div className="spinner"></div>
           </div>
         ) : (
