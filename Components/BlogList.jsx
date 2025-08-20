@@ -31,11 +31,12 @@ const BlogList = () => {
         <button onClick={() => setMenu('Lifestyle')} className={menu === "Lifestyle" ? 'bg-black text-white py-1 px-4 rounded-sm cursor-pointer' : "cursor-pointer"} >Lifestyle</button>
       </div>
       {
-        !blogs || blogs.length === 0 ? (
-
-          <div style={{marginBottom: '40px', alignItems: 'center'}} className="btn-spinner">
-            <p style={{ textAlign: 'center', marginTop: '40px', marginBottom: '40px', color: 'black' }}>Please wait ! <br />While backend is Connecting from Render.</p>
-            <div className="spinner"></div>
+        blogs || blogs.length === 0 ? (
+          <div className="flex justify-center items-center w-full h-64 mb-1.5 mt-10">
+            <div className="btn-spinner">
+              <p style={{ marginBottom: '40px', textAlign: 'center' }}>Please wait ! <br />While backend is Connecting from Render.</p>
+              <div  className="spinner"></div>
+            </div>
           </div>
         ) : (
           <div className="flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24">
