@@ -164,6 +164,10 @@
     border-radius: 10px !important;
   }
 
+  .btn-spinner .spinner{
+    margin-left: 40px;
+  }
+
   .Toastify__toast-container {
     width: 100% !important;
     left: 0 !important;
